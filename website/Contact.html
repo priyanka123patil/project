@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact US Form Using Flexbox</title>
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles4.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".btn").click(function(){
+				$(".input > input, .msg > textarea").val("");
+			})
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+  <h1>Contact US</h1>
+<form action="contact.php" method="POST">
+  <div class="address">
+    <div class="inner-address">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Mohadi Road, jalgaon,<br/> Maharashtra 52001, India</p>
+    </div>
+    <div class="inner-address">
+      <i class="fas fa-envelope"></i>
+      <p>Higheventcompany@gmail.com</p>
+    </div>
+    <div class="inner-address">
+      <i class="fas fa-phone-volume"></i>
+      <p>+91 1234567890</p>
+		</br>
+	</br>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="form-title">
+
+    </div>
+    <div class="input-form">
+      <div class="input">
+        <input type="text" name="firstname" id="firstname" placeholder="firstname"></br></br>
+			<input type="text" name="email" id="email" placeholder="email">
+      </div>
+      <div class="input">
+        <input type="text" name="lastname" id="lastname" placeholder="lastname"></br></br>
+	<input type="text" name="phonenumber" id="phonenumber" placeholder="phonenumber"></br>
+
+
+      </div>
+    </div>
+    <div class="inner-msg">
+      <div class="msg">
+        <textarea name="message" id="message" placeholder="message"></textarea>
+      </div>
+    </div>
+       <div class="Submit">
+            <input type="Submit" name="Send Message"value="Send Message">
+       </div>
+  </div>
+
+
+  <div class="social">
+    <div class="inner-social">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+    <div class="inner-social">
+      <i class="fab fa-google-plus-g"></i>
+      <i class="fab fa-reddit-alien"></i>
+      <i class="fab fa-whatsapp"></i>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
